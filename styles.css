@@ -97,7 +97,16 @@ h1 {
     body {
         background: none;
     }
+    main {
+       
+        width: 90%;
+        margin: 1%;
+       }
+
+       .buttons {
+        margin: 20%;
+       }
 }
     
-}
+
 
