@@ -16,31 +16,30 @@
         rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 🎲 Surpresinha Mega da Virada 🎲</title>
+    <title> 🎲 Sorteador 🎲</title>
 </head>
-
 <body>
     <main>
 
         <div class="superior">
-            <h1> Surpresinha </h1>
+            <h1> Sorteador </h1>
 
-            <img src="./assets/fundo.png" alt="logo-mega-sena-da-virada"
-                class="logoMega">
-                   </div>
+            <img src="https://gifs.eco.br/wp-content/uploads/2022/11/gifs-de-sorteio-0.gif" alt="Gifs de sorteio"
+                class="gif-sorteio">
+            <p class="digite-aqui"> Digite aqui os números</p>
+        </div>
         <div class="central">
-            <p class="jogoFinalizado"></p>
-            <p class="fraseSorteio"> Sorteio entre 01 - 60</p>
-            
+            <input class="input-de" id="i1" autofocus type="number" placeholder= "De: " />
+            <input class="input-para" id="i2" type="number" placeholder="Para: " />
 
         </div>
        <div class="buttons">
-            <button onclick="start()"    class="start" > <b>Novo  <br> Jogo     </b></button>
-            <button onclick="sorteio()" type="button"  class="result"> <b>Sortear <br> Número      </b></button>
-
+            <button onclick="sorteio()" type="button"  class="result"> <b>Clique <br>Aqui </b></button>
+            <button onclick="start()"  class="start"> <b>NOVO   </b></button>
         </div>
     </main>
 </body>
 <script src="./scripts.js   "></script>
 
 </html>
+
