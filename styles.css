@@ -7,9 +7,7 @@
 }
 
 body {
-    background-image: url("./assets/fundo.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("./assets/fundo.png");
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
@@ -17,132 +15,89 @@ body {
 
 }
 
+main {
+    background-color: rgb(231, 236, 231);
+    opacity: 80%;
+    border: none;
+    border-radius: 5%;
+    width: 40%;
+    margin: 1%;
+    
+}
 .superior {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 h1 {
-    color: rgb(236, 85, 160);
-    font-size: 70px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgb(15, 15, 15);
+    font-size: 300%;
+    text-shadow: -1px 0 rgb(252, 247, 247), 0 1px rgb(235, 230, 230), 1px 0 rgb(247, 244, 244), 0 -1px rgb(238, 234, 234);
 
 }
 
-.gif-sorteio {
-    width: 150px;
+.logoMega {
+    width: 100px;
 }
 
-.digite-aqui {
-    font-size: 50px;
-}
+
 
 .central {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    margin-top: 10px;
-
+    margin-top: 5%;
 }
 
-input {
-    height: 40px;
-    width: 200px;
-    border-radius: 10px;
-    font-size: 20px;
-    padding-left: 10px;
-    color: blueviolet;
-    font-family: 'Orbitron', sans-serif;
+.jogoFinalizado{
+    font-size: 200%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
+    
+    text-align: center;
+}
+.fraseSorteio{
+    font-size: 200%;
+    text-shadow: -1px 0 rgb(252, 247, 247), 0 1px rgb(235, 230, 230), 1px 0 rgb(247, 244, 244), 0 -1px rgb(238, 234, 234);
+    margin-top: 8%;
 }
 
-input::placeholder {
-    font-size: 20px;
-    padding-left: 10px;
-    color: blueviolet;
-    font-family: 'Oswald', sans-serif;
-}
-
-.result {
+.buttons {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
-    margin: 10px 260px;
-    font-size: 20px;
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    cursor: pointer;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    border: none;
+    justify-content: center;
+    margin: 10%;
+    
 }
 
+.result, .start {
+    font-size: 150%;
+    height: 100%;
+    width: 50%;
+    border-radius: 5%;
+    cursor: pointer;
+    background: rgb(10, 10, 10);
+    background: linear-gradient(90deg, rgb(149, 219, 121) 0%, rgb(87, 197, 96) 50%, rgb(96, 206, 92) 100%);
+    text-shadow: -1px 0 rgb(252, 247, 247), 0 1px rgb(235, 230, 230), 1px 0 rgb(247, 244, 244), 0 -1px rgb(238, 234, 234);
+    border: none;
+  
+}
 .start {
-    width: 100px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 280px;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
-    visibility: hidden;
-    cursor: pointer;
-    border-radius: 8px;
-    border: none;
-    color: antiquewhite;
+    visibility:hidden;
 }
-
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width:700px){
     body {
-        background-image: url('/assets/fundo.cel.png');
-
+        background: none;
     }
-
-    h1 {
-        font-size: 60px;
-        color: rgb(227, 236, 54);
-    }
-
-    .superior {
-        margin-top: 30px;
-        gap: 10px;
-
-    }
-
-    .digite-aqui {
-        margin-top: 10px;
-        font-size: 30px;
-        margin-bottom: 20px;
-    }
-
-    input {
-        width: 150px;
-        height: 50px;
-        color: rgb(44, 9, 77);
-
-    }
-
-    .result {
-        margin-top: 10px;
-        height: 100px;
-        width: 100px;
-        margin-left: 280px;
-
-    }
-
-    .start {
-        margin-top: 10px;
-        height: 40px;
-        width: 130px;
-        font-size: 30px;
-        margin-left: 270px;
-    }
-
 }
+    
+}
+
