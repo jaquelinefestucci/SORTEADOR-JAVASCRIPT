@@ -101,7 +101,7 @@ input::placeholder {
 
 @media screen and (max-width: 500px) {
     body {
-        background-image: url('/assets/fundo.cel.png');
+        background:rgb(131, 58, 180);
 
     }
 
